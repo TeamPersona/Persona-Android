@@ -1,0 +1,8 @@
+<resources>
+    <color name="colour_primary">#2E5894</color>
+    <color name="colour_primary_dark">#0B2F64</color>
+    <color name="colour_text_primary">#FFFFFF</color>
+    <color name="colour_window_background">#FFFFFF</color>
+    <color name="colour_nav_drawer">#000000</color>
+    <color name="colour_accent">#E0A237</color>
+</resources>

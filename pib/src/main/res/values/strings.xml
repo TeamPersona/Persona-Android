@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Personal Information Banking</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_vo_all">Value Opportunities</string>
+    <string name="nav_vo_featured">Featured</string>
+    <string name="nav_privacy_settings">Privacy Settings</string>
+    <string name="nav_acct_mgmt">My Account</string>
+    <string name="nav_sign_out">Sign out</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_vo_all">Value Opportunities</string>
+    <string name="title_vo_featured">Featured</string>
+    <string name="title_privacy_setting">Privacy Settings</string>
+    <string name="title_acct_mgmt">My Account</string>
+
+</resources>
