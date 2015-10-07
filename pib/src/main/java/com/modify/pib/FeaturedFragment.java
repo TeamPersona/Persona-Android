@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.modify.pib.dao.ValueOpportunityProvider;
 
-public class SecondFragment extends Fragment {
+public class FeaturedFragment extends Fragment {
 
     protected RecyclerView recyclerView;
     protected RecyclerView.LayoutManager layoutManager;
@@ -20,14 +20,15 @@ public class SecondFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment2, container, false);
-        rootView.setTag("SecondFragment");
+        View rootView = inflater.inflate(R.layout.fragment_featured, container, false);
+        rootView.setTag("FeaturedFragment");
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.vo_list);
+        recyclerView.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(getActivity());
 
-        voListAdapter = new VoListAdapter(new ValueOpportunityProvider().readVOs());
+        voListAdapter = new VoListAdapter(this.getActivity().getApplicationContext(), new ValueOpportunityProvider().readVOs());
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(voListAdapter);

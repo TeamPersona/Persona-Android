@@ -6,7 +6,6 @@
     android:layout_centerHorizontal="true"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    card_view:cardBackgroundColor="@color/accent_material_light"
     card_view:cardCornerRadius="4dp"
     >
 
@@ -54,6 +53,19 @@
             android:layout_alignParentRight="true"
             android:text="Value"
             />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_above="@+id/value_text"
+            android:layout_alignParentStart="true"
+            android:progress="20"
+            android:indeterminate="false"
+            android:layout_toStartOf="@+id/value_text"
+            android:max="100"
+            android:layout_alignParentEnd="true"/>
 
     </RelativeLayout>
 

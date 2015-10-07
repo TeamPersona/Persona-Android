@@ -2,51 +2,33 @@ package com.modify.pib.model;
 
 import java.math.BigDecimal;
 import java.util.Currency;
+import java.util.Locale;
 
 public class ValueOpportunity {
 
-    private String companyName;
-    private Currency currency;
-    private BigDecimal value;
-    private String description;
+    public final String companyName;
+    public final Locale locale;
+    public final BigDecimal value;
+    public final String description;
+    public final Integer maxParticipants;
+    public final Integer currParticipants;
+    public final String imageUrl;
 
-    public ValueOpportunity(String companyName, Currency currency, BigDecimal value, String description) {
+    public ValueOpportunity(
+            String companyName,
+            String imageUrl,
+            Locale locale,
+            BigDecimal value,
+            String description,
+            Integer maxParticipants,
+            Integer currParticipants) {
         this.companyName = companyName;
-        this.currency = currency;
+        this.imageUrl = imageUrl;
+        this.locale = locale;
         this.value = value;
         this.description = description;
-    }
-
-    public BigDecimal getValue() {
-        return value;
-    }
-
-    public void setValue(BigDecimal value) {
-        this.value = value;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
-
-    public Currency getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(Currency currency) {
-        this.currency = currency;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+        this.maxParticipants = maxParticipants;
+        this.currParticipants = currParticipants;
     }
 
 }

@@ -14,11 +14,11 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
 
-    private static final long DRAWER_CLOSE_DELAY_MS = 350;
+    private static final long DRAWER_CLOSE_DELAY_MS = 100;
     private static final String NAV_ITEM_ID = "navItemId";
 
     private final FirstFragment mFirstFragment = new FirstFragment();
-    private final SecondFragment mSecondFragment = new SecondFragment();
+    private final FeaturedFragment mFeaturedFragment = new FeaturedFragment();
     private final Handler mDrawerActionHandler = new Handler();
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.drawer_vo_featured:
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.frame, mSecondFragment)
+                        .replace(R.id.frame, mFeaturedFragment)
                         .commit();
                 break;
             default:
