@@ -3,11 +3,6 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/drawer_home"
-            android:checked="false"
-            android:title="@string/nav_home" />
-
-        <item
             android:id="@+id/drawer_vo_featured"
             android:checked="false"
             android:title="@string/nav_vo_featured" />

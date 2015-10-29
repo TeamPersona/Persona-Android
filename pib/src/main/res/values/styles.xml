@@ -1,11 +1,41 @@
 <resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:colorPrimary">@color/colour_primary</item>
-        <item name="android:colorPrimaryDark">@color/colour_primary_dark</item>
-        <item name="android:colorAccent">@color/colour_accent</item>
+        <item name="colorPrimary">@color/colour_primary</item>
+        <item name="colorPrimaryDark">@color/colour_primary_dark</item>
+        <item name="colorAccent">@color/colour_accent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:colorButtonNormal">@color/colour_primary</item>
+        <item name="android:buttonStyle">@style/AppButton</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Login" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colour_primary</item>
+        <item name="colorPrimaryDark">@color/colour_primary_dark</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@color/colour_primary</item>
+        <item name="android:colorButtonNormal">@color/colour_primary_dark</item>
+
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colour_accent</item>
+        <item name="android:textColorPrimary">@color/gray</item>
+        <item name="android:background">@color/colour_primary</item>
     </style>
 
 </resources>

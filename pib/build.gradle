@@ -38,10 +38,11 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:design:22.+'
-    compile 'com.android.support:cardview-v7:22.+'
-    compile 'com.android.support:recyclerview-v7:22.+'
+    compile 'com.android.support:cardview-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
     compile 'com.mcxiaoke.volley:library:1.0.+'
     compile 'com.google.guava:guava:15.+'
+    compile 'com.google.android.gms:play-services:4.2.42'
 }

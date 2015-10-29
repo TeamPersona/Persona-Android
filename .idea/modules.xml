@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Persona-Android.iml" filepath="$PROJECT_DIR$/Persona-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pib/pib.iml" filepath="$PROJECT_DIR$/pib/pib.iml" />
+    </modules>
+  </component>
+</project>

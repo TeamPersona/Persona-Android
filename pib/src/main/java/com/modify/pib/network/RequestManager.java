@@ -2,6 +2,7 @@ package com.modify.pib.network;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.renderscript.Sampler;
 import android.util.LruCache;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
@@ -29,6 +30,7 @@ public class RequestManager {
                 cache.put(url, bitmap);
             }
         });
+
     }
 
     private static class RequestManagerHolder {
