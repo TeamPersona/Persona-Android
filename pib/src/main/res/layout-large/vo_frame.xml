@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+    <fragment
+        android:id="@+id/fragment_vo_list"
+        android:name="com.modify.pib.fragment.VoListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:id="@+id/fragment_vo_detail"
+        android:name="com.modify.pib.fragment.VoDetailFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <color name="colour_primary">#3F51B5</color>
+    <color name="colour_primary_dark">#303F9F</color>
+    <color name="colour_text_primary">#FFFFFF</color>
+    <color name="colour_window_background">#FFFFFF</color>
+    <color name="colour_nav_drawer">#000000</color>
+    <color name="colour_accent">#FF4081</color>
+    <color name="list_background">#ECEDF0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#FAFAFA</color>
+</resources>

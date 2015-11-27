@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/detail_company_image"
+        android:transitionName="transition_company_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/detail_vo_title"
+        android:transitionName="transition_vo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="VO Title"
+        android:layout_toEndOf="@+id/detail_company_image"
+        android:layout_toStartOf="@+id/detail_value_text"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/detail_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Company Name"
+        android:layout_below="@+id/detail_vo_title"
+        android:layout_above="@+id/detail_progress_bar"
+        android:layout_toEndOf="@+id/detail_company_image"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/detail_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Value"
+        android:layout_alignTop="@+id/detail_company_image"
+        android:layout_alignParentEnd="true"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_progress_bar"
+        android:progress="20"
+        android:indeterminate="false"
+        android:max="100"
+        android:layout_below="@+id/detail_company_image"
+        />
+
+</RelativeLayout>

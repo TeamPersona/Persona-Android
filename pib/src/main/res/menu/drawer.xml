@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_vo_featured"
+            android:checked="false"
+            android:title="@string/nav_vo_featured" />
+
+        <item
+            android:id="@+id/drawer_vo_all"
+            android:checked="false"
+            android:title="@string/nav_vo_all" />
+
+        <item
+            android:id="@+id/drawer_acct_mgmt"
+            android:checked="false"
+            android:title="@string/nav_acct_mgmt" />
+
+        <item
+            android:id="@+id/drawer_privacy_settings"
+            android:checked="false"
+            android:title="@string/nav_privacy_settings" />
+        <item
+            android:id="@+id/drawer_sign_out"
+            android:checked="false"
+            android:title="@string/nav_sign_out" />
+
+    </group>
+</menu>
